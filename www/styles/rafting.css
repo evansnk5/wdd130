@@ -1,0 +1,86 @@
+/* rafting.css */
+
+:root {
+    --heading-background-color:white; 
+    --heading-texting-color: #333; 
+    --heading-font: 'Montserrat', Helvetice, sans-serif; 
+    --padding: 1rem; 
+    --border :1px solid rgba(0,0,0,0.1); 
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: var(--heading-background-color);
+    color: var(--heading-texting-color);
+    font-family: var(--heading-font);
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Limit the page width for easier design */
+  .container {
+    max-width: 1200px; /* You can adjust this value */
+    margin: 0 auto; /* Center the content */
+    padding: 20px;
+  }
+  
+  h1,h2{
+    color: var(--heading-texting-color);
+    margin: 0.5em 0;
+  }
+  
+  p {
+    font-family: var(--heading-font);
+    line-height: 1.6;
+    margin: 0.5em 0;
+  }
+  
+  footer p {
+    font-size: var(--heading-font);
+    color: var(--heading-texting-color);
+    font-family: var(--heading-font);
+  }
+
+  nav.sociallinks a {
+    text-decoration: none;
+  }
+  
+  nav.sociallinks a img {
+    width: 32px; /* Adjust size of the social media icons */
+    height: 32px;
+    border: none;
+  }
+  .hero {
+    position: relative;
+    /*background-image: url('../images/hero.jpg'); */
+    background-size: cover;
+    background-position: center;
+    height: auto;
+  }
+
+.hero article {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 50%; 
+  }
+.hero h1 {
+    position: absolute;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+/* Floating the image inside the article to the right of the paragraph */
+.hero article img {
+    float: right; 
+    width: 100px; 
+    height: auto; 
+  }
+  
