@@ -15,10 +15,9 @@
     padding: 0;
   }
   
-  /* Limit the page width for easier design */
   .container {
-    max-width: 1200px; /* You can adjust this value */
-    margin: 0 auto; /* Center the content */
+    max-width: 1200px; 
+    margin: 0 auto; 
     padding: 20px;
   }
   
@@ -44,7 +43,7 @@
   }
   
   nav.sociallinks a img {
-    width: 32px; /* Adjust size of the social media icons */
+    width: 32px; 
     height: 32px;
     border: none;
   }
@@ -81,4 +80,15 @@
     width: 100px; 
     height: auto; 
   }
-  
+section img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+section {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 40px;
+}
