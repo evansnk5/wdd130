@@ -13,26 +13,36 @@ body {
 }
 
 header {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
   align-items: center;
   justify-content: space-between;
   padding: 1rem;
-  background-color: #f7f7f7;
+  height: 100px;
+  background-color: rgb(111, 136, 136);
 }
 
 header img {
-  height: 50px;
+  height: 70px;
+  
 }
 
 nav ul {
   list-style: none;
   display: flex;
   gap: 1rem;
+  justify-content: flex-end;
 }
 
 nav ul li a {
   text-decoration: none;
-  color: var(--text-color);
+  color: whitesmoke;
+  padding: 0.5rem 1rem;
+  font-size: larger;
+}
+  
+nav ul li a:hover {
+  color: #0073e6;
 }
 
 .hero {
@@ -47,6 +57,7 @@ nav ul li a {
   display: block;
   width: 100%;
   height: auto;
+
 }
 .hero article img {
   float: right; 
