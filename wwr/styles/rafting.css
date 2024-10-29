@@ -17,7 +17,7 @@ header {
   grid-template-columns: 1fr 2fr 2fr;
   align-items: center;
   justify-content: space-between;
-  height: 80px;
+  height: 50px;
   background-color: #004d40;
   padding: 20px;
   color: #ffffff;
@@ -232,3 +232,108 @@ button:hover {
   font-size: 1.1rem;
   color: #333;
 }
+
+/* Content Grid */
+.content-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+.content-grid article {
+  text-align: center;
+}
+
+.content-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.logo {
+  font-size: 1.8rem;        
+  font-weight: bold;          
+  color: #0073e6;             
+  text-transform: uppercase;  
+  letter-spacing: 1px;       
+  display: flex;              
+  align-items: center;        
+}
+
+.logo img {
+  width: 40px;                
+  height: auto;               
+  margin-right: 20px;        
+
+}
+/* Trips Intro Section */
+.trip-intro {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Trips Grid Section */
+.trip-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.trip {
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.trip img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px 8px 0 0;
+}
+
+.trip h3 {
+  color: #333;
+  margin-top: 10px;
+}
+
+.trip-button {
+  background-color: #0073e6;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.trip-button:hover {
+  background-color: #005bb5;
+}
+#centered-content {
+  display: flex;                   /* Flexbox for centering */
+  justify-content: center;         /* Centers horizontally */
+  align-items: center;             /* Centers vertically */
+  background-color: #0073e6;       /* Background color */
+  color: #fff;                     /* Font color */
+  font-family: Arial, sans-serif;  /* Font family */
+  font-size: 1.5rem;               /* Font size */
+  padding: 20px;                   /* Padding around content */
+  text-align: center;              /* Center-align text */
+  border-radius: 8px;              /* Rounded corners */
+  width: 80%;                      /* Width of the element */
+  margin: 20px auto;               /* Centers the element on the page */
+}
+
+
+
+
+
+
+
+
+
+
+
