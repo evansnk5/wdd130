@@ -1,0 +1,81 @@
+.box{
+    box-sizing: border-box;
+    position: sticky;
+    width: 300px;
+    border: 5px;
+    margin: 5px;
+    background: lightgray;
+}
+.box img{
+    height: 50px;
+    width: auto;
+    position: relative;
+}
+.box1{
+    position: relative;
+    height: 60px;
+    width: auto;
+    background-color: rgb(217, 255, 0);
+    font:3rem ;
+    color: black;
+}
+.box2{
+    position: relative;
+    height: 60px;
+    width: auto;
+    background-color: rgb(184, 13, 13);
+    font:3rem ;
+    color: rgb(22, 21, 21);
+}
+.box3{
+    position: relative;
+    height: 60px;
+    width: auto;
+    background-color: rgb(13, 184, 90);
+    font:3rem ;
+    color: rgb(211, 204, 204);
+}
+.box4{
+    position: relative;
+    height: 60px;
+    width: auto;
+    background-color: rgb(184, 13, 127);
+    font:3rem ;
+    color: rgb(211, 204, 204);
+}
+
+.container{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background: rgb(212, 210, 210);
+    border: 2px solid black;
+    }
+.container_box{
+    width: 100%;
+    height: auto;
+    background: blue;
+    position: relative;
+    font-size: large;
+    top: 20px;
+    left: 15px;
+}
+.container img{
+    width: fit-content;
+    height: auto;
+}
+
+.container3{
+    width: 300px;
+    height: 300px;
+    background: lightgray;
+    position: relative;
+}
+.container3_box {
+    width: 100px;
+    height: 100px;
+    background: red;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+  }
