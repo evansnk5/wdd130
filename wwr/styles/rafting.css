@@ -8,13 +8,15 @@ body {
 
 /* Header */
 header {
+
 	margin: 1rem auto;
 	display: grid;
 	grid-template-columns: 1.1fr 1fr 1fr;
 	align-items: center;
-    padding: 0;;
+  padding: 0;;
 	border: 1px solid #180101;
-    background-color: #7e4e88;
+  background-color:  #004d40;
+  color: white;
 
 }
 .logo-img{
@@ -23,6 +25,7 @@ header {
     height: auto;
 }
 
+/* Navigation */
 .navigations {
     display: flex;
     flex-wrap: wrap;
@@ -32,26 +35,34 @@ header {
 }
 
 .navigations li {
-    flex: 1 1 auto;   
+    flex: 1 1 auto;
 }
 
 .navigations a {
-    display: block;
-    background-color: white;
-    color:black;
-    text-decoration: none;
+  display: block;
+  padding: 0.75rem 1rem;
+  background-color: transparent;
+  color: white;
+  text-decoration: none;
+  border-right: 2px solid rgba(255, 255, 255, 0.3); /* light divider */
+  text-align: center;
+  transition: background 0.3s ease;
 }
 
+.navigations li:last-child a {
+  border-right: none;
+}
 .navigations a:hover {
-	color: tomato;
+	color: #facc15;
 	font-weight: 1000;
 	text-decoration: underline;
 }
 
 /* Active link styling */
 .navigations a.active {
-    background-color: #e74c3c;
+    background-color: #00695c;
     font-weight: bold;
+    
 }
 
 /* Background img */
@@ -207,23 +218,25 @@ header {
 
 /* Footer */
 .footer-site {
-    background: #f0f0f0; 
-    color: #010d18;
+    background: #004d40; 
+    color: white;
+    padding: 1rem ;
     border-top: 1px solid #010d18;
 }
 
 .content{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; 
 }
 
 .copyrit{
     margin: 0;
     font-size: 1rem;
     text-align: center;
-    color: #333;
+    color: #f0f0f0;
 
 }
 .sociallinks{
@@ -232,14 +245,16 @@ header {
 
 }
 .sociallinks a {
-    transition: transform 0.3s ease;
-    text-decoration: none; /* Remove the url links */
-  }
+  display: inline-block;
+  transition: transform 0.3s ease;
+  text-decoration: none; 
+ }
+ 
 .sociallinks img {
     width: 40px; 
     height: 40px; 
   }
 .sociallinks a:hover{
-    transform: translateY(-2px);
-  } 
+  transform: scale(1.1);
+} 
 
