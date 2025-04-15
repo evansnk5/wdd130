@@ -2,13 +2,10 @@ body {
     font-family: "Roboto", sans-serif;
     margin: 0;
     padding: 0;
-    background-color:white;
 }
-
 
 /* Header */
 header {
-
 	margin: 1rem auto;
 	display: grid;
 	grid-template-columns: 1.1fr 1fr 1fr;
@@ -17,7 +14,6 @@ header {
 	border: 1px solid #180101;
   background-color:  #004d40;
   color: white;
-
 }
 .logo-img{
     margin: 0 0.25rem 0 1rem;
@@ -101,7 +97,7 @@ header {
   .hero article p {
     margin: 0;
     color: white;
-    align-items: left;
+    text-align: left;
   }
   
   /* Image on right */
@@ -507,13 +503,22 @@ iframe {
 
 /* Grid layout */
 .info-grid {
+  padding: 2rem;
+  text-align: center;
+  background-color: #f9f9f9;
+  color:black;  
+}
+.info-grid h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.info-grid .grid-item-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
-  padding: 2rem;
+  margin-top: 1rem;
 }
 .grid-item {
-  background-color: #f9f9f9;
   text-align: center;
   padding: 1rem;
   border: 1px solid #ddd;
@@ -523,4 +528,7 @@ iframe {
   max-width: 100%;
   height: auto;
   border-radius: 4px;
+}
+.des{
+  color: #134614fa;
 }
